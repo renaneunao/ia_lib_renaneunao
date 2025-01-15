@@ -16,7 +16,8 @@ setup(
     author="@renaneunao",
     author_email="renan_vianna7@icloud.com",
     url="https://github.com/renaneunao/ia_lib_renaneunao",
-    packages=find_packages(),
+    packages=find_packages(include=["BIBLIOTECA_IA", "BIBLIOTECA_IA.*"]),
+    include_package_data=True,  # Inclui dados do MANIFEST.in
     install_requires=[
         "python-dotenv",
         "langchain",
